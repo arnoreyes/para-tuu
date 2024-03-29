@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respuesta</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Fondo gris claro */
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .respuesta {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            max-width: 400px;
+        }
+
+        .titulo {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #4e6bff; /* Azul */
+        }
+
+        .boton {
+            background-color: #ff69b4; /* Rosa */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+            margin-bottom: 10px; /* Añadido para dar espacio entre el botón y la imagen */
+        }
+
+        .boton:hover {
+            background-color: #ff4f7a; /* Rosa más oscuro */
+        }
+
+        .imagen-gatito {
+            width: 100px;
+            margin-top: 10px; /* Añadido para dar espacio entre la imagen y el siguiente elemento */
+        }
+    </style>
+</head>
+<body>
+    <div class="respuesta">
+        <h1 class="titulo">¿Quieres ser mi princesa?</h1>
+        <button class="boton" onclick="firmarContrato()">Sí 😊</button>
+        <img class="imagen-gatito" src="gatito1.png" alt="Gatito 1"> <!-- Imagen de gatito debajo del primer botón -->
+        <button class="boton" onclick="firmarContrato()">Sí 😏</button>
+        <img class="imagen-gatito" src="Gatito2.png" alt="Gatito 2"> <!-- Imagen de gatito debajo del segundo botón -->
+    </div>
+
+    <script>
+        function firmarContrato() {
+            window.location.href = "contrato.html";
+        }
+    </script>
+</body>
+</html>

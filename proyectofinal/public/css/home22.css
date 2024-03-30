@@ -1,0 +1,788 @@
+
+
+/* Estilos del Segundo CSS */
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: rgb(190, 227, 241);
+  color: rgb(4, 7, 8);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(127, 207, 207);
+}
+
+footer {
+  background-color: #f4f4f4;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+#bgVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+
+h1 {
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+  font-size: 1.2em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card {
+  transition: 0.3s ease;
+}
+
+.video-section {
+  height: 50vh;
+}
+
+.background-video {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container input[type="text"], 
+.form-container input[type="password"], 
+.form-container input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #d7dde4;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-outline-custom {
+  border-color: #000000;  /* Color del borde del botón */
+  color: #010608;  /* Color del texto del botón */
+}
+
+.btn-outline-custom:hover {
+  background-color: #000000;  /* Color de fondo cuando se pasa el ratón */
+  color: white;  /* Color del texto cuando se pasa el ratón */
+}
+.dropdown-item {
+  color: #000000;  /* Color del texto de los enlaces del menú desplegable */
+  border-bottom: 1px solid #E0E0E0;  /* Borde inferior para separar los enlaces */
+}
+
+.dropdown-item:hover {
+  background-color: #F5F5F5;  /* Color de fondo cuando se pasa el ratón */
+  color: #000000;  /* Color del texto cuando se pasa el ratón */
+}
+.mi-estilo-texto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;  /* Letras en negrita */
+  font-size: 4em;  /* Tamaño grande */
+  text-transform: uppercase;  /* Convertir el texto a mayúsculas */
+  letter-spacing: 5px;  /* Espacio entre letras */
+  color: white;  /* Color del texto */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);  /* Sombra para que el texto destaque sobre imágenes */
+}
+.video-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center;     /* Centra horizontalmente */
+  height: 100%;            /* Ocupa todo el alto del contenedor padre, asegúrate de que el contenedor padre tenga un alto definido */
+  text-align: center;      /* Alinea el texto al centro */
+}
+.btn-outline-custom {
+  border-color: #000000; /* Color del borde del botón */
+  color: black; /* Color del texto del botón cambiado a negro */
+}
+
+.btn-outline-custom:hover {
+  background-color: #000000; /* Color de fondo al pasar el ratón por encima */
+  color: white; /* Color del texto al pasar el ratón por encima */
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact {
+  padding-bottom: 130px;
+}
+
+.contact .info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #149ddd;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #dff3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #149ddd;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #1f2c25;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact .php-email-form label {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #149ddd;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #37b3ed;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 20px 0;
+  background: #f9f9f9;
+}
+
+.breadcrumbs h2 {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #0e2442;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs ol {
+    display: block;
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 15px;
+  color: #f4f6fd;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background: #040b14;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #eaebf0;
+}
+
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
+}
+.group{
+  display: flex;
+  justify-content: space-around;
+}
+.person{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 10px 20px;
+  width: 29%;
+}
+.back{
+  background: url("https://p4.wallpaperbetter.com/wallpaper/735/608/924/bar-liquor-wallpaper-preview.jpg") center/ cover no-repeat;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #ffffff;
+
+}
+/* Estilos para el carrusel */
+.carousel-item {
+  height: 50vh; /* Ajusta esto a la altura que prefieras */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 50vh; /* Asegúrate de que esto coincida con la altura de .carousel-item */
+  object-fit: cover; /* Esto cortará la imagen si es necesario para cubrir el espacio */
+}
+
+.carousel .carousel-item {
+  position: relative;
+  height: 70vh; /* o la altura que prefieras */
+}
+
+.carousel .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 70vh; /* debe coincidir con la altura de .carousel-item */
+  object-fit: cover;
+}
+
+   /* Estilos para la alerta emergente */
+   .custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none;
+  }
+  #gallery .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+  }
+  
+  #gallery h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 15px;
+  }
+  
+  .grid-item {
+    overflow: hidden;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Esto asegura que las imágenes se recorten para llenar el espacio asignado sin distorsionarse */
+    transition: transform 0.3s ease;
+  }
+  
+  .grid-item:hover img {
+    transform: scale(1.05); /* Un pequeño efecto de zoom al pasar el mouse sobre las imágenes */
+  }
+   /* Anula la sombra de texto para todos los elementos */
+   * {
+    text-shadow: none !important;
+}
+.text-uppercase {
+  letter-spacing: 1px;
+}
+
+.card h5.card-title {
+  color: #6597c9; /* Ejemplo de color azul de marca */
+}
+
+.card {
+  box-shadow: 0 2px 5px rgba(0,0,0,.15); /* Sombra suave para las tarjetas */
+}
+
+.btn-outline-primary:hover {
+  background-color: #8fb3da; /* Cambia el color de fondo al pasar el mouse */
+  color: white;
+}
+
+/* Estilos para el botón de chatbot */
+#chatbotButton {
+  position: fixed;
+  bottom: 80px; /* Ajustado para asegurar el botón dentro del contenedor */
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1001;
+}
+
+#chatbotButton:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el contenedor de chatbot */
+.chatbot-container {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.chatbot-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-header button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.chatbot-body {
+  padding: 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.chatbot-messages {
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: auto;
+  max-height: 250px;
+}
+
+.chatbot-input-container {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  position: sticky;
+  bottom: 0;
+  background: white;
+  display: flex;
+  padding: 10px 15px; /* Ajustado para dar más espacio dentro del contenedor de entrada */
+
+}
+
+.chatbot-input-container input {
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.chatbot-input-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 4px 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1px; /* Asegúrate de que hay espacio entre el input y el botón */
+
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  border-radius: 15px;
+  padding: 6px 12px;
+  margin-bottom: 5px;
+  max-width: 80%;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #eaeaea;
+  border-radius: 15px;
+  padding: 6px 12px;
+  margin-bottom: 5px;
+  max-width: 80%;
+}
+
+.user-message, .bot-message {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo para los botones "Saber más" */
+.btn-saber-mas {
+  background-color: rgb(155, 201, 215); /* Color azul claro para "Saber más" */
+  border-color: rgb(190, 227, 241); /* Borde del mismo color */
+  color: black; /* Texto en negro para mejor contraste */
+}
+
+/* Estilo para los botones "Contratar" */
+.btn-contratar {
+  background-color: rgb(155, 201, 215); /* Color azul más oscuro para "Contratar" */
+  border-color: rgb(155, 201, 215); /* Borde del mismo color */
+  color: black; /* Texto en negro para mejor contraste */
+}
+
+/* Modificación al estilo de Bootstrap para mantener el estilo al hacer hover */
+.btn-saber-mas:hover,
+.btn-contratar:hover {
+  background-color: rgb(170, 214, 229); /* Un azul ligeramente más oscuro para el hover */
+  border-color: rgb(170, 214, 229);
+}
+
+/* Asegúrate de que el texto de los botones se mantenga en negro incluso al pasar el mouse sobre ellos */
+.btn-saber-mas:hover,
+.btn-contratar:hover {
+  color: black;
+}
+
+
+/* Estilos para los mensajes del usuario */
+.user-message {
+  background-color: #dcf8c6;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px auto 5px 10px; /* Margen automático a la derecha para alinear a la izquierda */
+  max-width: 80%;
+  align-self: flex-start; /* Alinea a la izquierda */
+}
+
+/* Estilos para los mensajes del bot */
+.bot-message {
+  background-color: #eaeaea;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px 10px 5px auto; /* Margen automático a la izquierda para alinear a la derecha */
+  max-width: 80%;
+  align-self: flex-end; /* Alinea a la derecha */
+}
+.chatbot-messages {
+  display: flex;
+  flex-direction: column; /* Asegúrate de que no esté en 'column-reverse' */
+  overflow-y: auto;
+  height: 300px; /* Ajusta esto según el tamaño deseado para tu chat */
+  padding: 10px;
+}
+#chatbotButton {
+  /* Asegúrate de que el resto de tus estilos para el botón estén aquí */
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+}
+#chatbotButton {
+  position: fixed;
+  bottom: 100px; /* Ajusta la distancia desde el fondo para que no se sobreponga al chat */
+  right: 20px;
+  /* Resto de tus estilos para #chatbotButton */
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 20px; /* Asegúrate de que haya espacio suficiente entre el chat y el botón */
+  right: 20px;
+  /* Resto de tus estilos para .chatbot-container */
+}
+/* Asumiendo que el botón de chat tiene el ID 'chatbotButton' */
+#chatbotButton {
+  position: fixed;
+  bottom: 20px; /* O la distancia que prefieras desde la parte inferior de la ventana */
+  right: 20px;
+  /* Otros estilos */
+}
+
+/* Ajustar el fondo cuando el chat está abierto */
+.chatbot-container.open + #chatbotButton {
+  bottom: calc(100% + 20px); /* Ajusta la propiedad bottom para mover el botón hacia arriba */
+}
+.chatbot-container {
+  position: fixed;
+  right: 20px; /* Ajusta según sea necesario para alinear con tu botón */
+  bottom: 90px; /* Asegúrate de que esta altura sea suficiente para que el chat aparezca por encima del botón */
+  z-index: 1000; /* Asegúrate de que el z-index sea suficiente para que se superponga sobre otros elementos si es necesario */
+}
+
+#chatbotButton {
+  position: fixed;
+  right: 20px;
+  bottom: 20px; /* Ajusta esta propiedad para cambiar la posición del botón */
+  z-index: 1001; /* Debe ser mayor que el z-index del contenedor del chat para que aparezca encima */
+}

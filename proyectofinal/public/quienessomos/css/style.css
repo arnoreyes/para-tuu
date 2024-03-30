@@ -1,0 +1,369 @@
+.group{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.person{
+  text-align: center;
+  margin: 10px;
+}
+
+.back{
+  background: url("https://p4.wallpaperbetter.com/wallpaper/735/608/924/bar-liquor-wallpaper-preview.jpg") center/cover no-repeat;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+/* Additional styles can be added below as needed */
+.paquetes {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+  flex-wrap: wrap; /* Para permitir que los elementos se ajusten en pantallas más pequeñas */
+  gap: 20px; /* Espacio entre los paquetes */
+}
+/*paquetes info*/
+/* ... Estilos anteriores ... */
+
+.titulo-servicios {
+  text-align: center;
+  font-size: 2.5rem; /* Tamaño del título */
+  color: #007bff; /* Color del texto */
+  margin-bottom: 1.5rem; /* Espacio debajo del título */
+  font-weight: 600; /* Grosor de la fuente */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  position: relative;
+}
+
+.titulo-servicios::after {
+  content: '';
+  width: 60px; /* Ancho de la línea */
+  height: 4px; /* Altura de la línea */
+  background-color: #007bff; /* Color de la línea */
+  display: block;
+  margin: 20px auto 10px; /* Centra la línea debajo del texto */
+}
+
+/* ... */
+
+
+
+.paquete {
+  border: 1px solid #e1e1e1;
+  padding: 20px;
+  border-radius: 10px;
+  width: calc(25% - 20px); /* Ajusta el ancho teniendo en cuenta el espacio entre paquetes */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+.paquete:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+}
+
+.paquete h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.paquete p {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.precio {
+  font-weight: bold;
+  color: #007bff;
+  background-color: #f2f2f2;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 20px; /* Espacio antes del botón */
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.paquete button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.paquete button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-color: #fff;
+}
+
+/* Respuestas para dispositivos móviles */
+@media (max-width: 1024px) {
+  .paquetes {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .paquete {
+    width: calc(50% - 20px); /* 2 paquetes por fila en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .paquetes {
+    flex-direction: column;
+  }
+
+  .paquete {
+    width: 100%; /* 1 paquete por fila en pantallas pequeñas */
+  }
+}
+
+/* ... Estilos anteriores ... */
+
+/* Aumentar la jerarquía visual con tamaños de fuente y pesos */
+h1, h2, h3, h4, h5, h6 {
+  color: #0056b3; /* Color azul para los títulos para mantener la coherencia */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600; /* Peso semi-negrita para títulos */
+}
+
+h1 {
+  font-size: 2.5rem; /* Tamaño grande para títulos principales */
+}
+
+h2 {
+  font-size: 2rem; /* Tamaño menor para subtítulos */
+}
+
+/* Ajustar el cuerpo del texto para mejorar la legibilidad */
+p {
+  font-size: 1rem; /* Tamaño estándar para el cuerpo del texto */
+  line-height: 1.6; /* Espaciado de línea para facilitar la lectura */
+  color: #333; /* Color oscuro para texto regular para maximizar contraste */
+}
+
+/* Mejorar el espaciado entre secciones y elementos */
+.section {
+  padding: 40px 0; /* Añadir padding arriba y abajo para cada sección */
+}
+
+/* Estilizar botones para hacerlos más atractivos */
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px; /* Bordes redondeados */
+  font-weight: 500; /* Peso medio para que resalten */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para interactividad */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Color primario para botones importantes */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Oscurecer el botón al pasar el ratón */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para efecto de elevación */
+}
+
+
+
+/* ... */
+.testimonial {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Para mantener la misma altura en todos los testimonios */
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.customer {
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Asegura que los elementos de la última fila se alineen a la izquierda */
+.row::after {
+    content: '';
+    flex: auto;
+}
+
+@media (max-width: 768px) {
+    .row {
+        display: block;
+    }
+    .col-md-4 {
+        width: 100%;
+    }
+}
+
+/*redes*/
+.social-media-section {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.social-media-section h3 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.social-icon {
+  margin: 0 10px;
+  font-size: 2rem; /* Tamaño de los íconos */
+  color: #333; /* Color de los íconos */
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: #007bff; /* Cambiar el color al pasar el ratón o al enfocar */
+  text-decoration: none; /* Quitar la subrayado del texto */
+}
+
+/* Asegúrate de que el tamaño de los íconos sea responsive */
+@media (max-width: 768px) {
+  .social-icon {
+      font-size: 1.5rem; /* Tamaño más pequeño para pantallas estrechas */
+  }
+}
+/*Preguntas*/
+.social-media-section {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.social-media-section h3 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.social-icon {
+  margin: 0 10px;
+  font-size: 2rem; /* Tamaño de los íconos */
+  color: #333; /* Color de los íconos */
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: #007bff; /* Cambiar el color al pasar el ratón o al enfocar */
+  text-decoration: none; /* Quitar la subrayado del texto */
+}
+
+/* Asegúrate de que el tamaño de los íconos sea responsive */
+@media (max-width: 768px) {
+  .social-icon {
+      font-size: 1.5rem; /* Tamaño más pequeño para pantallas estrechas */
+  }
+}
+/*Preguntas*/
+/* Estilos para la sección de Preguntas Frecuentes */
+.faq-section {
+  padding: 40px 0;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.accordion-item {
+  border: none; /* Eliminar bordes predeterminados */
+  border-bottom: 1px solid #eaeaea; /* Añadir un sutil borde en la parte inferior */
+}
+
+.accordion-button {
+  background-color: #ffffff;
+  color: #94bae2;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #0056b3;
+  background-color: #f8f9fa;
+  box-shadow: none; /* Eliminar sombra interior */
+}
+
+.accordion-body {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .faq-section h2 {
+      font-size: 1.5rem; /* Tamaño de fuente más pequeño para dispositivos móviles */
+  }
+}
+/*Galeria de imagenes*/
+/* Estilos para la galería de imágenes */
+.img-fluid {
+  margin-bottom: 15px;
+  border-radius: 5px; /* Borde redondeado para las imágenes */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+}
+
+/* Estilos para el contenedor de video */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*optimizacion para moviles*/
+
+/* Estilos para dispositivos con una anchura de hasta 768px */
+@media (max-width: 768px) {
+  .testimonial {
+      /* Hacer que los testimonios ocupen todo el ancho en dispositivos móviles */
+      width: 100%;
+      margin-bottom: 15px;
+  }
+
+  .video-container {
+      /* Ajustar el contenedor del video para dispositivos móviles */
+      padding-top: 56.25%;
+  }
+
+  /* Ajustes adicionales para otros elementos según sea necesario */
+}
+/* Estilos completos proporcionados previamente */
